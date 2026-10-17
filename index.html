@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rudra Studio — 10,000+ colouring pages for kids</title>
+<meta name="description" content="Rudra Studio: 10,000+ colouring pages for kids — animals, vegetables, fruits, sea creatures, vehicles, food, mandalas, and more. Tap to fill with colour, save or print. Safe and fun for all ages.">
+<meta name="theme-color" content="#00A8A8">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2300A8A8'/%3E%3Ccircle cx='22' cy='24' r='9' fill='%23FFC93C'/%3E%3Ccircle cx='42' cy='24' r='9' fill='%23FF8A5C'/%3E%3Ccircle cx='22' cy='44' r='9' fill='%236EE7B7'/%3E%3Ccircle cx='42' cy='44' r='9' fill='%23FF87AB'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<noscript><div class="wrap" style="padding:20px 0;font-weight:700">This colouring studio needs JavaScript to draw its pages. Please switch it on and reload — thank you!</div></noscript>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="#/">
+      <span class="brand-mark" aria-hidden="true">🎨</span>
+      <span class="brand-name">Rudra Studio<small>creative colouring for little artists</small></span>
+    </a>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#/">Home</a>
+      <a href="#/gallery">Colouring pages</a>
+      <a href="#/" data-goto="how">How it works</a>
+      <a href="#/" data-goto="parents" class="hide-sm">For parents</a>
+    </nav>
+    <div class="header-auth" id="header-auth">
+      <button type="button" class="btn ghost small" id="btn-open-login">🔑 Log in</button>
+      <button type="button" class="btn primary small" id="btn-open-register">✨ Sign up</button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ HOME ============ -->
+  <section class="view" id="view-home">
+
+    <div class="hero wrap">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <p class="hero-hi">👋 Welcome to Rudra Studio — ready to create?</p>
+          <h1>10,000 unique colouring pages for <span class="hl">little</span> <span class="hl2">artists</span></h1>
+          <p class="lead">Pick a page, tap the shapes and fill them with colour — then save your masterpiece or print it out. No mess, wholesome fun for little artists.</p>
+          <div class="hero-actions">
+            <a class="btn coral big" href="#/gallery">🖍️ Start colouring</a>
+            <button class="btn ghost big" data-surprise type="button">🎲 Surprise me</button>
+          </div>
+          <ul class="hero-points">
+            <li>10,000+ unique patterns</li>
+            <li>27 fun themes</li>
+            <li>100% kid-safe &amp; secure</li>
+            <li>Tablets &amp; phones welcome</li>
+          </ul>
+        </div>
+        <div class="hero-art-card">
+          <span class="hero-art-label">Colouring in action ✨</span>
+          <div id="hero-art" aria-hidden="true"></div>
+        </div>
+      </div>
+      <div class="stat-strip">
+        <div class="stat"><b id="stat-count">10,000</b> colouring pages</div>
+        <div class="stat"><b id="stat-cats">27</b> categories</div>
+        <div class="stat"><b>0</b> annoying ads · safe play</div>
+        <div class="stat"><b>56</b> colours + your own 🎨</div>
+      </div>
+    </div>
+
+    <section class="section wrap" id="recent-section" hidden>
+      <div class="section-head">
+        <h2>Keep colouring</h2>
+        <p>Jump back into a picture you started.</p>
+      </div>
+      <div class="cards-grid" id="recent-grid"></div>
+    </section>
+
+    <section class="section wrap" id="categories">
+      <div class="section-head">
+        <h2>Pick a category</h2>
+        <p>27 vibrant collections — animals, vegetables, fruits, sea creatures, vehicles, food and more.</p>
+      </div>
+      <div class="cat-grid" id="category-grid"></div>
+    </section>
+
+    <section class="section wrap" id="popular">
+      <div class="section-head">
+        <h2>Popular right now</h2>
+        <p>Fresh favourites from the colouring box.</p>
+        <a class="btn ghost small" href="#/gallery">See all 10,000 pages →</a>
+      </div>
+      <div class="cards-grid" id="popular-grid"></div>
+    </section>
+
+    <section class="section wrap" id="how">
+      <div class="section-head">
+        <h2>How it works</h2>
+        <p>Three happy steps from blank page to fridge door.</p>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <h3>Pick a page</h3>
+          <p>Browse 10,000 unique drawing patterns by category, or hit “Surprise me” and let luck pick for you.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <h3>Tap to fill</h3>
+          <p>Every shape is a little pot of paint. Tap it with a colour and watch the picture bloom.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <h3>Save or print</h3>
+          <p>Keep your masterpiece as a picture, print it on A4, or start another one straight away.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section parents wrap" id="parents">
+      <div class="parents-card">
+        <h2>For parents &amp; teachers</h2>
+        <p style="color:var(--muted);margin:4px 0 0">Everything in Rudra Studio is crafted for safe, creative, screen-time-friendly colouring.</p>
+        <ul class="bullet-list">
+          <li>Kid-safe &amp; wholesome — no trackers, no annoying pop-ups, calm creative fun.</li>
+          <li>10,000 unique patterns: animals, vegetables, fruits, sea life, vehicles, food, mandalas, dinosaurs, and more.</li>
+          <li>Pictures, favourites and progress stay in your browser; nothing is uploaded.</li>
+          <li>Works on computers, tablets and phones with friendly big tap targets.</li>
+          <li>Print any page on A4 for offline colouring with real crayons.</li>
+          <li>Starter tier includes 30 full patterns; Pro unlocks all 10,000 drawings.</li>
+        </ul>
+      </div>
+    </section>
+  </section>
+
+  <!-- ============ GALLERY ============ -->
+  <section class="view" id="view-gallery" hidden>
+    <div class="wrap gallery-top" id="gallery-top">
+      <h1>Colouring pages</h1>
+      <p class="sub">Tap any picture to open it in Rudra Studio.</p>
+
+      <!-- Quota Banner for Starter Tier -->
+      <div class="quota-banner" id="gallery-quota-banner" hidden>
+        <div class="quota-lead">
+          <span class="quota-icon" aria-hidden="true">🎨</span>
+          <div>
+            <strong>Starter Plan: <span id="quota-count-text">0 of 30</span> patterns unlocked</strong>
+            <p class="quota-sub">Colour up to 30 patterns on Starter, or unlock unlimited access to all 10,000 drawings.</p>
+          </div>
+        </div>
+        <div class="quota-bar-wrap">
+          <div class="quota-progress-bar" id="quota-progress-bar" style="width: 0%"></div>
+        </div>
+        <button type="button" class="btn coral small" data-trigger-paywall>⭐ Unlock All 10,000</button>
+      </div>
+
+      <div class="filters-chips" id="filters-chips" role="group" aria-label="Filter by category"></div>
+      <div class="toolbar">
+        <div class="grow">
+          <input type="search" id="search-input" placeholder="Search 10,000 pages… (try “carrot”, “dolphin”, “apple”, “rocket”, “mandala”)" aria-label="Search colouring pages">
+        </div>
+        <select id="sort-select" aria-label="Sort pages">
+          <option value="fun">Fun picks</option>
+          <option value="az">A → Z</option>
+          <option value="simple">Simplest first</option>
+          <option value="detailed">Most detailed</option>
+        </select>
+        <select id="detail-select" aria-label="Filter by difficulty">
+          <option value="any">All difficulties</option>
+          <option value="easy">Easy (big shapes)</option>
+          <option value="medium">Medium</option>
+          <option value="detailed">Detailed</option>
+        </select>
+        <label class="fav-toggle-label">
+          <input type="checkbox" id="fav-toggle">
+          <span>❤️ Favourites</span>
+        </label>
+      </div>
+      <div class="active-summary" id="active-summary" aria-live="polite"></div>
+    </div>
+
+    <div class="wrap gallery-body">
+      <div class="cards-grid" id="cards-grid" aria-live="polite"></div>
+      <nav class="pagination" id="pagination" aria-label="Gallery pagination"></nav>
+    </div>
+  </section>
+
+  <!-- ============ STUDIO ============ -->
+  <section class="view" id="view-studio" hidden>
+    <div class="studio-header">
+      <button class="btn ghost small" id="btn-studio-back" type="button" aria-label="Back to gallery">← Gallery</button>
+      <div class="studio-meta">
+        <h1 id="studio-title">Colouring page</h1>
+        <span id="studio-sub" class="studio-sub">Pick a colour and tap any shape to fill it in</span>
+      </div>
+      <div class="studio-actions">
+        <button class="btn sun small" id="btn-studio-random" type="button" title="Open a new random picture">🎲 New page</button>
+        <button class="btn ghost small" id="btn-sound" type="button" aria-pressed="true">🔊 Sound on</button>
+      </div>
+    </div>
+
+    <div class="studio-layout">
+      <!-- Toolbar: tools, actions -->
+      <aside class="studio-toolbar" aria-label="Colouring tools">
+        <div class="tool-group">
+          <span class="group-label">Tools</span>
+          <button class="tool-btn active" data-tool="fill" type="button" aria-pressed="true" title="Fill shape with colour">
+            <span class="t-icon">🪣</span><span class="t-name">Fill</span>
+          </button>
+          <button class="tool-btn" data-tool="erase" type="button" aria-pressed="false" title="Erase colour (set to white)">
+            <span class="t-icon">🧽</span><span class="t-name">Eraser</span>
+          </button>
+          <button class="tool-btn magic" id="btn-magic" type="button" title="Colour the whole picture with rainbow magic!">
+            <span class="t-icon">🪄</span><span class="t-name">Magic</span>
+          </button>
+        </div>
+
+        <div class="tool-group">
+          <span class="group-label">Edit</span>
+          <button class="tool-btn" id="btn-undo" type="button" title="Undo (Ctrl+Z)" disabled>
+            <span class="t-icon">↶</span><span class="t-name">Undo</span>
+          </button>
+          <button class="tool-btn" id="btn-redo" type="button" title="Redo (Ctrl+Shift+Z)" disabled>
+            <span class="t-icon">↷</span><span class="t-name">Redo</span>
+          </button>
+          <button class="tool-btn danger" id="btn-clear" type="button" title="Clear all colours">
+            <span class="t-icon">🗑️</span><span class="t-name">Clear</span>
+          </button>
+        </div>
+
+        <div class="tool-group">
+          <span class="group-label">Share</span>
+          <button class="tool-btn primary" id="btn-save-png" type="button" title="Save as a PNG image">
+            <span class="t-icon">💾</span><span class="t-name">Save</span>
+          </button>
+          <button class="tool-btn ghost" id="btn-print" type="button" title="Print this colouring page">
+            <span class="t-icon">🖨️</span><span class="t-name">Print</span>
+          </button>
+        </div>
+      </aside>
+
+      <!-- Center: canvas -->
+      <div class="studio-stage" id="studio-stage">
+        <div class="studio-scroll" id="studio-scroll">
+          <div class="svg-host" id="svg-host" role="region" aria-label="Interactive colouring canvas"></div>
+        </div>
+      </div>
+
+      <!-- Right: palette -->
+      <aside class="studio-palette" aria-label="Colour palette">
+        <div class="palette-head">
+          <span class="group-label">Paint box</span>
+          <label class="custom-pick" title="Pick any custom colour">
+            <span>Custom 🎨</span>
+            <input type="color" id="custom-color" value="#F44336" aria-label="Pick custom colour">
+          </label>
+        </div>
+        <div class="palette-grid" id="palette-grid" role="group" aria-label="Palette colours"></div>
+      </aside>
+    </div>
+
+    <div class="studio-footer">
+      <div class="wrap footer-inner">
+        <div class="progress">
+          <div class="progress-track"><div id="progress-fill"></div></div>
+          <span id="progress-text" aria-live="polite">0 of 0 shapes coloured</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h3>🎨 Rudra Studio</h3>
+        <p style="margin:0;color:rgba(246,239,227,.85)">Creative colouring studio for little artists — pick, tap, colour, save and print. Featuring 10,000 unique drawing patterns across 27 fun categories. Made with care for kids &amp; families.</p>
+      </div>
+      <div>
+        <h3>Explore Themes</h3>
+        <div class="foot-links">
+          <a href="#/gallery">All 10,000 pages</a>
+          <a href="#/gallery?cat=animals">🐾 Cute Animals</a>
+          <a href="#/gallery?cat=vegetables">🥕 Fresh Vegetables</a>
+          <a href="#/gallery?cat=fruits">🍓 Sweet Fruits</a>
+          <a href="#/gallery?cat=sea">🐠 Under the Sea</a>
+          <a href="#/gallery?cat=vehicles">🚗 Things That Go</a>
+          <a href="#/gallery?cat=food">🍕 Yummy Food</a>
+        </div>
+      </div>
+      <div>
+        <h3>Good to know</h3>
+        <div class="foot-links">
+          <a href="#/" data-goto="how">How it works</a>
+          <a href="#/" data-goto="parents">For parents &amp; teachers</a>
+          <a href="#/gallery?detail=easy">Pages for tiny hands</a>
+          <a href="#/gallery?cat=mandalas">Relaxing Mandalas</a>
+        </div>
+      </div>
+    </div>
+    <div class="foot-note">
+      <span>© <span id="year">2026</span> Rudra Studio — colouring fun on any device.</span>
+      <span>Favourites and saved pictures stay in your browser.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ CELEBRATION MODAL ============ -->
+<div class="celebrate" id="celebrate" hidden role="dialog" aria-modal="true" aria-labelledby="celebrate-title">
+  <div class="celebrate-card">
+    <div class="celebrate-emoji" aria-hidden="true">🎉</div>
+    <h3 id="celebrate-title">Fabulous! Every shape is coloured!</h3>
+    <p>Your masterpiece is ready — save it or print it out!</p>
+    <div class="celebrate-actions">
+      <button class="btn primary" id="celebrate-save" type="button">💾 Save picture</button>
+      <button class="btn sun" id="celebrate-new" type="button">🎲 New page</button>
+      <button class="btn ghost" id="celebrate-close" type="button">Keep colouring</button>
+    </div>
+  </div>
+</div>
+<div class="confetti" id="confetti" hidden aria-hidden="true"></div>
+<div class="toast" id="toast" role="status" hidden></div>
+
+<!-- ============ AUTH MODAL (LOGIN / REGISTER) ============ -->
+<div class="modal-backdrop" id="auth-modal" hidden role="dialog" aria-modal="true" aria-labelledby="auth-modal-title">
+  <div class="modal-card auth-card">
+    <button type="button" class="modal-close" data-close-auth aria-label="Close dialog">✕</button>
+    <div class="auth-header">
+      <span class="auth-icon" aria-hidden="true">🎨</span>
+      <h2 id="auth-modal-title">Rudra Studio Account</h2>
+      <p class="auth-sub">Save your artwork, track favourites, and manage your colouring membership.</p>
+    </div>
+
+    <div class="auth-tabs" role="tablist">
+      <button type="button" class="auth-tab active" id="tab-btn-login" role="tab" aria-selected="true">Log In</button>
+      <button type="button" class="auth-tab" id="tab-btn-register" role="tab" aria-selected="false">Create Account</button>
+    </div>
+
+    <div class="auth-alert" id="auth-error" hidden role="alert"></div>
+
+    <!-- Login Form -->
+    <form class="auth-form" id="form-login">
+      <label class="form-field">
+        <span>Email Address</span>
+        <input type="email" id="login-email" required placeholder="you@example.com" autocomplete="email">
+      </label>
+      <label class="form-field">
+        <span>Password</span>
+        <input type="password" id="login-password" required placeholder="••••••••" autocomplete="current-password">
+      </label>
+      <button type="submit" class="btn coral big btn-block">Log In to Studio</button>
+
+      <div class="demo-helpers">
+        <span class="demo-label">Quick test accounts:</span>
+        <div class="demo-buttons">
+          <button type="button" class="btn ghost small" id="btn-demo-starter">🦁 Demo Starter (Leo)</button>
+          <button type="button" class="btn ghost small" id="btn-demo-pro">⭐ Demo Pro (Maya)</button>
+        </div>
+      </div>
+    </form>
+
+    <!-- Register Form -->
+    <form class="auth-form" id="form-register" hidden>
+      <label class="form-field">
+        <span>Artist / Parent Name</span>
+        <input type="text" id="reg-name" required placeholder="e.g. Maya or Coach Alex" autocomplete="name">
+      </label>
+      <label class="form-field">
+        <span>Email Address</span>
+        <input type="email" id="reg-email" required placeholder="you@example.com" autocomplete="email">
+      </label>
+      <label class="form-field">
+        <span>Create Password</span>
+        <input type="password" id="reg-password" required minlength="4" placeholder="At least 4 characters" autocomplete="new-password">
+      </label>
+      <button type="submit" class="btn primary big btn-block">Create My Account</button>
+    </form>
+  </div>
+</div>
+
+<!-- ============ PAYWALL MODAL (AFTER 30 PATTERNS) ============ -->
+<div class="modal-backdrop" id="paywall-modal" hidden role="dialog" aria-modal="true" aria-labelledby="paywall-title">
+  <div class="modal-card paywall-card">
+    <button type="button" class="modal-close" data-close-paywall aria-label="Close paywall">✕</button>
+    <div class="paywall-badge">🌟 RUDRA STUDIO PRO</div>
+    <h2 id="paywall-title">You've reached 30 Starter Patterns! 🎨✨</h2>
+    <p class="paywall-reason" id="paywall-reason">You have reached the 30-pattern Starter limit. Upgrade to Rudra Studio Pro for unlimited access to all 10,000 unique drawings!</p>
+
+    <div class="paywall-perks">
+      <div class="perk-item">
+        <span class="perk-icon">🌟</span>
+        <div><strong>All 10,000 unique patterns</strong><span>Every animal, veggie, fruit, vehicle, mandala and mythical creature.</span></div>
+      </div>
+      <div class="perk-item">
+        <span class="perk-icon">🖨️</span>
+        <div><strong>Unlimited downloads &amp; printables</strong><span>Save high-res PNG pictures and print crisp A4 colouring pages.</span></div>
+      </div>
+      <div class="perk-item">
+        <span class="perk-icon">🪄</span>
+        <div><strong>Magic Rainbow colorizer</strong><span>Instant one-tap rainbow palette fills and unlimited undo.</span></div>
+      </div>
+      <div class="perk-item">
+        <span class="perk-icon">🛡️</span>
+        <div><strong>100% kid-safe environment</strong><span>Zero distracting ads, quiet creative focus for young minds.</span></div>
+      </div>
+    </div>
+
+    <!-- Pricing Plans Grid -->
+    <div class="plan-cards">
+      <div class="plan-card featured">
+        <span class="plan-tag">MOST POPULAR · SAVE 50%</span>
+        <div class="plan-name">Annual Pass</div>
+        <div class="plan-price"><strong>$29.99</strong><span>/ year</span></div>
+        <div class="plan-desc">Just $2.50/mo. Full access for all kids on any tablet or phone.</div>
+        <button type="button" class="btn coral big btn-block" data-upgrade-pro>🌟 Unlock All 10,000 Patterns</button>
+      </div>
+      <div class="plan-card">
+        <div class="plan-name">Monthly Plan</div>
+        <div class="plan-price"><strong>$4.99</strong><span>/ month</span></div>
+        <div class="plan-desc">Flexible month-to-month access. Cancel anytime.</div>
+        <button type="button" class="btn ghost big btn-block" data-upgrade-pro>Choose Monthly</button>
+      </div>
+    </div>
+
+    <div class="paywall-footer-note">
+      <span>Already subscribed? <button type="button" class="link-btn" id="paywall-login-link">Log in to your account</button></span>
+    </div>
+  </div>
+</div>
+
+<script src="js/auth.js"></script>
+<script src="js/templates.js"></script>
+<script src="js/studio.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
