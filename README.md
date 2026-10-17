@@ -1,4 +1,4 @@
-# Kids Color Game 🎨
+# Kids Colour Game 🎨
 
 A fun, interactive, and simple web-based color game designed to help kids learn colors, alphabets, and numbers while unleashing their creativity!
 
