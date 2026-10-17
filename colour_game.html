@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pattern Party — 100,000 Unique Coloring Pages in 11 Categories!</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>🎨 Pattern Party! ✨</h1>
+    <p class="tagline">11 categories · 100,000 one‑of‑a‑kind pages each · every creature unique!</p>
+</header>
+
+<div class="container">
+
+    <div class="categories" id="categories"></div>
+
+    <div class="recent-strip" id="recent-strip"></div>
+
+    <div class="pattern-nav">
+        <button class="nav-btn" id="prevBtn" title="Previous pattern">◀</button>
+        <div class="pattern-badge">
+            Pattern
+            <input id="patternInput" type="text" inputmode="numeric" value="1" aria-label="Pattern number">
+            of <span id="patternTotal">100,000</span>
+        </div>
+        <button class="nav-btn" id="nextBtn" title="Next pattern">▶</button>
+    </div>
+
+    <div class="species-tag" id="speciesTag">—</div>
+
+    <div class="coloring-area" id="coloring-area"></div>
+
+    <div class="palette" id="color-palette"></div>
+
+    <div class="actions">
+        <button class="btn btn-reset" id="resetBtn"><span>🔄</span> Start Over</button>
+        <button class="btn btn-magic" id="magicBtn"><span>✨</span> Magic Fill</button>
+        <button class="btn btn-new"   id="newBtn"><span>🎲</span> New Pattern</button>
+        <button class="btn btn-save"  id="saveBtn"><span>💾</span> Save</button>
+    </div>
+</div>
+
+<div id="modal">
+    <div class="modal-content">
+        <h2 class="text-3xl text-green-500 mb-4">Yay! Masterpiece Saved! 🎉</h2>
+        <p class="text-lg text-gray-700" id="modalText">You did a great job coloring!</p>
+        <button class="btn btn-save mt-6 mx-auto" id="modalCloseBtn">Awesome!</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
